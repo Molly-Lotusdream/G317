@@ -1,7 +1,38 @@
-@charset "UTF-8";
-/**
- * 
- * @authors Your Name (you@example.org)
- * @date    2022-04-28 20:10:20
- * @version $Id$
- */
+@charset 'UTF-8';
+
+body {
+    padding-top: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > .m-nav {
+    font-size: 27px;
+    font-weight: bolder;
+    margin: 0 50px 0 150px;
+    letter-spacing: 2px;
+}
+
+nav > .m-search {
+    border: 2px solid #ddd;
+    border-radius: 3px;
+}
+
+nav > .m-search > span > button, input {
+    border: none;
+    background-color: #fff;
+}
+
+nav > .m-event {
+    outline: none;
+}
