@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 
 body {
+    width: 100%;
     padding-top: 10px;
     justify-content: center;
     align-content: center;
@@ -10,22 +11,33 @@ li {
     list-style: none;
 }
 
+input[type=text]:focus{
+      outline: none;
+      font-size: 16px;
+    }
+
+
 nav {
     position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding-bottom: 30px;
 }
 
 nav > .m-nav {
-    font-size: 27px;
+    font-size: 25px;
     font-weight: bolder;
-    margin: 0 50px 0 150px;
-    letter-spacing: 2px;
+    margin: 10px 50px 0 100px;
+    letter-spacing: 3px;
 }
 
 nav > .m-search {
     border: 2px solid #ddd;
     border-radius: 3px;
+        padding: 8px 2px 4px 5px;
 }
 
 nav > .m-search > span > button, input {
@@ -33,6 +45,8 @@ nav > .m-search > span > button, input {
     background-color: #fff;
 }
 
-nav > .m-event {
-    outline: none;
+nav>.m-event,.m-ideas,.m-sort {
+       margin: 5px 4px 0 60px;
+    font-size: 20px;
+    font-weight: bold;
 }
