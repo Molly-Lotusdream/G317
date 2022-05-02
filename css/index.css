@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 
 body {
+
     width: 100%;
     padding-top: 10px;
     justify-content: center;
@@ -18,11 +19,11 @@ input[type=text]:focus{
 
 
 nav {
-    position: fixed;
+    /*position: fixed;*/
     display: flex;
     justify-content: flex-start;
     flex: 1;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
     width: 100%;
     padding-bottom: 30px;
 }
@@ -50,3 +51,75 @@ nav>.m-event,.m-ideas,.m-sort {
     font-size: 20px;
     font-weight: bold;
 }
+
+header {
+    width: 100%;
+    display: flex;
+    /*margin: 35px 0;*/
+}
+header>.m-homepage {
+    margin: 0;   
+    width: 64%;
+}
+header>.m-intro {
+    background-color: #133353;
+    height: 475px;}
+header>.m-intro>.m-intro-tit,.m-intro-gov,.m-intro-more,.m-intro-bot{
+    margin: 32px 100px;
+}
+header>.m-intro>.m-intro-tit>span {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+}
+header>.m-intro>.m-intro-tit>label {
+    color: white;
+    font-size: 23px;
+}
+header>.m-intro>.m-intro-more>label {
+    color: white;
+    font-size: 19px;
+}
+header>.m-intro>.m-intro-gov>label {
+    color: white;
+    font-size: 27px;
+}
+header>.m-intro>.m-intro-bot>label {
+    color: white;
+    font-size: 21px;
+}
+section>.m-button>.m-button-tit {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center; /*居中对齐*/
+    align-content: center; /*垂直对齐*/
+    margin-top: 40px;
+}
+section>.m-button>.m-button-sec {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly; /*居中对齐*/
+    align-content: center; /*垂直对齐*/
+}
+section>.m-button>.m-button-sec>li>img {
+    margin:14px 0 -12px 9px;
+    width: 48px;
+    height: 48px;
+}
+
+section>.m-button>.m-button-sec>li {
+    background-color: #ddd;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 0 47px 20px 20px;
+    width: 25%;
+    margin: 2px 15px 26px 13px;
+}
+}
+section>.m-button>.m-button-sec>li>span {
+    font-size: 25px;
+    font-weight: bold;
+    /*align-items: center;*/
+    }
