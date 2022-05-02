@@ -61,3 +61,22 @@ header>.m-title {
     font-family: monospace;
     word-spacing: 5px;
 }
+header>.m-scroll>ul {
+display: flex;
+}
+header>.m-scroll>ul>li {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+margin: 20px 20px 0 -2px;
+box-shadow: 2px 2px  2px 2px #ccc;
+border-radius: 2px;
+font-weight: bold;
+color: #666;
+font-family: monospace;
+}
+header>.m-scroll>ul>li>span {
+    padding: 20px 0 20px 0;
+}
