@@ -1,6 +1,7 @@
 @charset 'UTF-8';
 
 body {
+    display: flex;
     width: 100%;
     padding-top: 10px;
     justify-content: center;
@@ -48,4 +49,15 @@ nav>.m-event,.m-ideas,.m-sort {
        margin: 5px 4px 0 60px;
     font-size: 20px;
     font-weight: bold;
+}
+header {
+
+    width: 100%;
+}
+header>.m-title {
+      margin: 100px 0 0 109px;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: monospace;
+    word-spacing: 5px;
 }
