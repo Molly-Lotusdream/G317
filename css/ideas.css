@@ -1,9 +1,8 @@
 @charset 'UTF-8';
 
 body {
-    display: flex;
+    font-family: cursive;
     width: 100%;
-    padding-top: 10px;
     justify-content: center;
     align-content: center;
 }
@@ -12,22 +11,24 @@ li {
     list-style: none;
 }
 
-input[type=text]:focus{
-      outline: none;
-    }
-
+input[type=text]:focus {
+    font-size: 16px;
+    outline: none;
+}
 
 nav {
+    padding: 10px 0;
     position: fixed;
     display: flex;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
     justify-content: flex-start;
     flex: 1;
-    border-bottom: 1px solid #ddd;
-    width: 100%;
-    padding-bottom: 30px;
 }
 
 nav > .m-nav {
+    font-family: cursive;
     font-size: 25px;
     font-weight: bolder;
     margin: 10px 50px 0 100px;
@@ -35,48 +36,110 @@ nav > .m-nav {
 }
 
 nav > .m-search {
+    padding: 8px 2px 4px 5px;
     border: 2px solid #ddd;
     border-radius: 3px;
-        padding: 8px 2px 4px 5px;
 }
 
-nav > .m-search > span > button, input {
+nav > .m-search > span > button,
+input {
     border: none;
     background-color: #fff;
 }
 
-nav>.m-event,.m-ideas,.m-sort {
-       margin: 5px 4px 0 60px;
+nav > .m-event,
+.m-ideas,
+.m-sort {
+    font-family: cursive;
     font-size: 20px;
     font-weight: bold;
+    margin: 5px 4px 0 60px;
 }
-header {
 
+header {
+    padding-top: 65px;
     width: 100%;
 }
+
 header>.m-title {
-      margin: 100px 0 0 109px;
+    margin: 100px 0 0 109px;
     font-size: 38px;
     font-weight: bold;
     font-family: monospace;
     word-spacing: 5px;
 }
+
 header>.m-scroll>ul {
-display: flex;
+    display: flex;
 }
+
+header>.m-scroll>ul>.u-left,
+.u-right {
+    margin: 70px 12px 0 0;
+}
+
 header>.m-scroll>ul>li {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     text-align: center;
     align-items: center;
-margin: 20px 20px 0 -2px;
-box-shadow: 2px 2px  2px 2px #ccc;
-border-radius: 2px;
-font-weight: bold;
-color: #666;
-font-family: monospace;
+    margin: 20px 20px 0 -2px;
+    box-shadow: 2px 2px  2px 2px #ccc;
+    border-radius: 2px;
+    font-weight: bold;
+    color: #666;
+    font-family: monospace;
 }
+
 header>.m-scroll>ul>li>span {
-    padding: 20px 0 20px 0;
+    margin: 15px 0;
+}
+
+footer {
+    display: flex;
+    padding: 50px 0;
+    text-align: left;
+    border-top: 1px solid #ccc;
+    background: #f0f0f0;
+}
+
+footer > .m-houzz {
+    width: 20%;
+    margin-left: 30px;
+}
+
+footer>.m-houzz,
+footer>.m-company,
+footer>.m-bussiness,
+footer>.m-help,
+footer>.m-connect {
+    margin: 0 20px;
+}
+
+footer>.m-houzz>li,
+footer>.m-company>li,
+footer>.m-bussiness>li,
+footer>.m-help>li,
+footer>.m-connect>li {
+    font-weight: lighter;
+    padding: 5px 0;
+}
+
+.u-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.u-houzz {
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.u-logo {
+    background-color: #aaa;
+    padding: 6px 5px;
+    border-radius: 20px;
 }
