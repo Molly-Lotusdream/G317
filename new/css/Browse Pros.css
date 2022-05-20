@@ -1,0 +1,217 @@
+@charset 'UTF-8';
+
+body {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+}
+
+input[type=text]:focus {
+    font-size: 16px;
+    outline: none;
+}
+
+nav {
+
+    /*position: fixed;*/
+    display: flex;
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+nav > .m-nav {
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 10px 50px 0 100px;
+    letter-spacing: 3px;
+}
+
+nav > .m-search {
+    padding: 8px 2px 4px 5px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+}
+
+nav > .m-search > span > button,
+input {
+    border: none;
+    background-color: #fff;
+}
+
+nav > .m-event,
+.m-ideas,
+.m-sort {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 4px 0 60px;
+}
+header {
+        margin: 0 0 282px 0;
+
+}
+header > .m-header > li {
+    font-size: 25px;
+    display: flex;
+    margin: -104px 10px;
+    color: #fff;
+    justify-content: center;
+    align-content: center;
+}
+
+header > .m-header > img {
+    width: 100%;
+    height: 300px;
+}
+
+header > .m-header > li:nth-child(2) {
+    display: flex;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+}
+
+header > .m-header > li > span {
+    border: 2px solid #ddd;
+}
+
+header > .m-header > li > span > .m-header-gt {
+    color: #fff;
+    border-left: 2px solid #ddd;
+    background: #14685b;
+    justify-content: center;
+    align-content: center;
+}
+section {
+    margin-top: 10px;
+}
+section>.m-BrowseAllPros >.m-Popular-title >label ,
+section>.m-BrowseAllPros >.m-Renvoation-title >label ,
+section>.m-BrowseAllPros >.m-Services-title >label ,
+section>.m-BrowseAllPros >.m-Remodeling-title >label ,
+section>.m-BrowseAllPros >.m-Outdoor-title >label ,
+section>.m-BrowseAllPros >.m-AppliancesSystems-title >label ,
+section>.m-BrowseAllPros >.m-CleaningServices-title >label
+{
+    margin: 250px 74px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+section>.m-BrowseAllPros > .m-Popular-column ,
+section>.m-BrowseAllPros > .m-Renvoation-column ,
+section>.m-BrowseAllPros > .m-Services-column ,
+section>.m-BrowseAllPros > .m-Remodeling-column ,
+section>.m-BrowseAllPros > .m-Outdoor-column ,
+section>.m-BrowseAllPros > .m-AppliancesSystems-column ,
+section>.m-BrowseAllPros > .m-CleaningServices-column 
+{   
+    display: flex;
+    flex-direction: row;
+}
+
+section>.m-BrowseAllPros > .m-Popular-column> ul ,
+section>.m-BrowseAllPros > .m-Renvoation-column>ul ,
+section>.m-BrowseAllPros > .m-Services-column >ul ,
+section>.m-BrowseAllPros > .m-Remodeling-column >ul ,
+section>.m-BrowseAllPros > .m-Outdoor-column >ul ,
+section>.m-BrowseAllPros > .m-AppliancesSystems-column >ul ,
+section>.m-BrowseAllPros > .m-CleaningServices-column >ul
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+section>.m-HomeImprovementPros>label {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    margin-left: 40px;
+}
+
+section>.m-HomeImprovementPros>.m-American{
+    border-bottom: 1.5px solid #ccc;
+}
+section>.m-HomeImprovementPros>.m-American{
+    display: flex;
+    flex-direction: row;
+}
+section>.m-HomeImprovementPros>.m-American>ul>li{
+    margin-left: 50px;
+    font-size: 20px;
+}
+section>.m-HomeImprovementPros>.m-American>ul>span{
+    color: #163;
+    margin: 0 44px;
+    font-weight: bold;
+}
+section>.m-botton {
+    background: #f0f0f0;
+}
+
+section>.m-botton>ul {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+    margin-top: 30px;
+    margin-left: 195px;
+}
+
+section>.m-botton>ul>li {
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    padding: 50px 0;
+    text-align: left;
+    border-top: 1px solid #ccc;
+    background: #f0f0f0;
+}
+
+footer > .m-houzz {
+    width: 20%;
+    margin-left: 30px;
+}
+
+footer > .m-houzz,
+footer > .m-company,
+footer > .m-bussiness,
+footer > .m-help,
+footer > .m-connect {
+    margin: 0 20px;
+}
+
+footer > .m-houzz > li,
+footer > .m-company > li,
+footer > .m-bussiness > li,
+footer > .m-help > li,
+footer > .m-connect > li {
+    font-weight: lighter;
+    padding: 5px 0;
+}
+
+.u-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.u-houzz {
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.u-logo {
+    padding: 6px 5px;
+    border-radius: 20px;
+    background-color: #aaa;
+}
