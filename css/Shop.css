@@ -1,342 +1,272 @@
 @charset 'UTF-8';
 
-body
-{
-    font-family: cursive;
-
-    width: 100%;
-
-    justify-content: center;
-    align-content: center;
+body {
+	font-family: cursive;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
 }
 
-li
-{
-    list-style: none;
+li {
+	list-style: none;
 }
 
-input[type=text]:focus
-{
-    font-size: 16px;
-
-    outline: none;
+input[type=text]:focus {
+	font-size: 16px;
+	outline: none;
 }
 
-nav
-{
-    position: fixed;
-
-    display: flex;
-
-    width: 100%;
-    padding: 10px 0;
-
-    border-bottom: 1px solid #fff;
-    background-color: #fff;
-
-    justify-content: flex-start;
-    flex: 1;
+/* 设置滚动条的样式 */
+.field_config::-webkit-scrollbar {
+	width: 5px;
+	border-radius: 8px;
 }
 
-nav > .m-nav
-{
-    font-family: cursive;
-    font-size: 25px;
-    font-weight: bolder;
-
-    margin: 10px 50px 0 100px;
-
-    letter-spacing: 3px;
+/* 滚动槽 */
+.field_config::-webkit-scrollbar-track {
+	background-color: #fff;
 }
 
-nav > .m-search
-{
-    padding: 8px 2px 4px 5px;
+/* 滚动条滑块 */
+.field_config::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	background: #b2b2b2;
+}
 
-    border: 2px solid #ddd;
-    border-radius: 3px;
+nav {
+	position: fixed;
+	display: flex;
+	width: 100%;
+	padding: 10px 0;
+	border-bottom: 1px solid #fff;
+	background-color: #fff;
+	justify-content: flex-start;
+	flex: 1;
+}
+
+nav > .m-nav {
+	font-family: cursive;
+	font-size: 25px;
+	font-weight: bolder;
+	margin: 10px 50px 0 100px;
+	letter-spacing: 3px;
+}
+
+nav > .m-search {
+	padding: 8px 2px 4px 5px;
+	border: 2px solid #ddd;
+	border-radius: 3px;
 }
 
 nav > .m-search > span > button,
-input
-{
-    border: none;
-    background-color: #fff;
+input {
+	border: none;
+	background-color: #fff;
 }
 
 nav > .m-event,
 .m-ideas,
-.m-sort
-{
-    font-family: cursive;
-    font-size: 20px;
-    font-weight: bold;
-
-    margin: 5px 4px 0 60px;
+.m-sort {
+	font-family: cursive;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 5px 4px 0 60px;
 }
 
-header
-{
-    display: flex;
-
-    padding: 64px 121px;
+header {
+	display: flex;
+	padding: 64px 121px;
 }
 
-header > .m-top
-{
-    display: flex;
-    flex-direction: row;
+header > .m-top {
+	display: flex;
+	flex-direction: row;
 }
 
-header > .m-top > .m-top-left
-{
-    display: flex;
-    flex-direction: column;
-
-    width: 200px;
+header > .m-top > .m-top-left {
+	display: flex;
+	overflow: auto;
+	flex-direction: column;
+	width: 230px;
+	height: 249px;
 }
 
-header > .m-top > .m-top-left > span
-{
-    font-size: 20px;
-    font-weight: bold;
-
-    margin: 10px;
-    padding: 5px 0;
-
-    border-bottom: 1.5px solid #ccc;
+header > .m-top > .m-top-left > span {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 10px;
+	padding: 5px 0;
+	border-bottom: 1.5px solid #ccc;
 }
 
-header > .m-top > .m-top-left > li
-{
-    margin: 10px;
+header > .m-top > .m-top-left > li {
+	margin: 10px;
 }
 
-header > .m-top > .m-top-left > label
-{
-    color: red;
+header > .m-top > .m-top-left > label {
+	padding: 5px 10px;
+	color: red;
 }
 
-header > .m-top > .m-top-right > video
-{
-    width: 886px;
-    height: 250px;
+header > .m-top > .m-top-right > video {
+	width: 886px;
+	height: 250px;
 }
 
-section > .m-shopcolumn
-{
-    display: flex;
-    flex-direction: column;
-
-    padding: 0 85px;
-}
-section > .m-shopcolumn > div
-{
-    display: flex;
-}
-section > .m-shopcolumn > div > ul
-{
-    display: flex;
-    flex-direction: column;
+section > .m-shopcolumn {
+	display: flex;
+	flex-direction: column;
+	padding: 0 85px;
 }
 
-section > .m-shopcolumn > div > ul > img
-{
-    padding-bottom: 20px;
-}
-section > .m-shopcolumn > div > ul > span
-{
-    font-weight: bold;
+section > .m-shopcolumn > div {
+	display: flex;
 }
 
-section > .m-shopillustration
-{
-    display: flex;
-
-    padding-top: 40px;
-    padding-bottom: 60px;
-
-    justify-content: center;
+section > .m-shopcolumn > div > ul {
+	display: flex;
+	flex-direction: column;
 }
 
-section > .m-ShopBestsellers
-{
-    display: flex;
-    flex-direction: row;
-
-    padding: 0 98px;
+section > .m-shopcolumn > div > ul > img {
+	padding-bottom: 20px;
 }
 
-section > .m-ShopBestTitle
-{
-    padding: 0 125px;
-}
-section > .m-ShopBestTitle > span
-{
-    font-size: 20px;
-    font-weight: bold;
+section > .m-shopcolumn > div > ul > span {
+	font-weight: bold;
 }
 
-section > .m-ShopBestsellers
-{
-    display: flex;
-    flex-direction: column;
-}
-section > .m-ShopBestsellers > div
-{
-    display: flex;
-    flex-direction: row;
+section > .m-shopillustration {
+	display: flex;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	justify-content: center;
 }
 
-section > .m-ShopBestsellers > div > ul
-{
-    display: flex;
-    flex-direction: column;
-
-    padding-top: 10px;
+section > .m-ShopBestsellers {
+	display: flex;
+	flex-direction: row;
+	padding: 0 98px;
 }
 
-section > .m-ShopBestsellers > div > ul > img
-{
-    width: 160px;
-    height: 160px;
+section > .m-ShopBestTitle {
+	padding: 0 125px;
 }
 
-section > .m-ShopBestsellers > div > ul > span
-{
-    font-size: 18px;
-    font-weight: bold;
-
-    padding-top: 10px;
+section > .m-ShopBestTitle > span {
+	font-size: 20px;
+	font-weight: bold;
 }
 
-section > .m-ShopBestsellers > div > ul > span > label
-{
-    font-size: 16px;
-
-    text-decoration: line-through;
-
-    color: #939393;
+section > .m-ShopBestsellers {
+	display: flex;
+	flex-direction: column;
 }
 
-section > .m-RecommendedProducts > div
-{
-    display: flex;
-    flex-direction: row;
-
-    padding: 0 120px;
+section > .m-ShopBestsellers > div {
+	display: flex;
+	flex-direction: row;
 }
 
-section > .m-RecommendedProducts > div > ul
-{
-    display: flex;
-    flex-direction: column;
-
-    padding: 15px;
+section > .m-ShopBestsellers > div > ul {
+	display: flex;
+	flex-direction: column;
+	padding-top: 10px;
 }
 
-section > .m-RecommendedProducts > div > ul > img
-{
-    width: 220px;
-    height: 220px;
+section > .m-ShopBestsellers > div > ul > img {
+	width: 160px;
+	height: 160px;
 }
 
-section > .m-RecommendedProducts > div > ul > label
-{
-    font-size: 13px;
-
-    color: #636463;
+section > .m-ShopBestsellers > div > ul > span {
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 10px;
 }
 
-section > .m-RecommendedProducts > div > ul > span
-{
-    font-weight: bold;
+section > .m-ShopBestsellers > div > ul > span > label {
+	font-size: 16px;
+	text-decoration: line-through;
+	color: #939393;
 }
 
-section > .m-RecommendedProducts > div > ul > span > label
-{
-    font-size: 14px;
-
-    text-decoration: line-through;
-
-    color: #939393;
+section > .m-RecommendedProducts > div {
+	display: flex;
+	flex-direction: row;
+	padding: 0 120px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer
-{
-    display: flex;
-
-    padding: 50px 0;
-
-    text-align: left;
-
-    border-top: 1px solid #ccc;
-    background: #f0f0f0;
+section > .m-RecommendedProducts > div > ul {
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
 }
 
-footer > .m-houzz
-{
-    width: 20%;
-    margin-left: 30px;
+section > .m-RecommendedProducts > div > ul > img {
+	width: 220px;
+	height: 220px;
+}
+
+section > .m-RecommendedProducts > div > ul > label {
+	font-size: 13px;
+	color: #636463;
+}
+
+section > .m-RecommendedProducts > div > ul > span {
+	font-weight: bold;
+}
+
+section > .m-RecommendedProducts > div > ul > span > label {
+	font-size: 14px;
+	text-decoration: line-through;
+	color: #939393;
+}
+
+footer {
+	display: flex;
+	padding: 50px 0;
+	text-align: left;
+	border-top: 1px solid #ccc;
+	background: #f0f0f0;
+}
+
+footer > .m-houzz {
+	width: 20%;
+	margin-left: 30px;
 }
 
 footer > .m-houzz,
 footer > .m-company,
 footer > .m-bussiness,
 footer > .m-help,
-footer > .m-connect
-{
-    margin: 0 20px;
+footer > .m-connect {
+	margin: 0 20px;
 }
 
 footer > .m-houzz > li,
 footer > .m-company > li,
 footer > .m-bussiness > li,
 footer > .m-help > li,
-footer > .m-connect > li
-{
-    font-weight: lighter;
-
-    padding: 5px 0;
+footer > .m-connect > li {
+	font-weight: lighter;
+	padding: 5px 0;
 }
 
-.u-title
-{
-    font-size: 20px;
-    font-weight: bold;
-
-    padding-bottom: 40px;
+.u-title {
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 40px;
 }
 
-.u-houzz
-{
-    font-size: 40px;
-    font-weight: bolder;
-
-    letter-spacing: 2px;
+.u-houzz {
+	font-size: 40px;
+	font-weight: bolder;
+	letter-spacing: 2px;
 }
 
-.u-logo
-{
-    padding: 6px 5px;
-
-    border-radius: 20px;
-    background-color: #aaa;
+.u-logo {
+	padding: 6px 5px;
+	border-radius: 20px;
+	background-color: #aaa;
 }
