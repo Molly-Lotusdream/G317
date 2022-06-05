@@ -50,7 +50,8 @@ input {
 
 nav > .m-event,
 .m-ideas,
-.m-sort {
+.m-sort,
+.m-sign {
     font-family: cursive;
     font-size: 20px;
     font-weight: bold;
@@ -66,10 +67,16 @@ header {
 header > .m-homepage {
     width: 64%;
     margin: 0;
+    height: 500px;
+}
+header > .m-homepage>img {
+    width: 920px;
+    height: 500px;
 }
 
 header > .m-intro {
-    height: 475px;
+       height: 459px;
+    margin-top: 21px;
     background-color: #133353;
 }
 
@@ -220,18 +227,18 @@ footer {
     background: #f0f0f0;
 }
 
-footer > .m-houzz {
+footer > .m-HZ {
     width: 20%;
     margin-left: 30px;
 }
-footer>.m-houzz,
+footer>.m-HZ,
 footer>.m-company,
 footer>.m-bussiness,
 footer>.m-help,
 footer>.m-connect {
 margin: 0 20px ;
 }
-footer>.m-houzz>li,
+footer>.m-HZ>li,
 footer>.m-company>li,
 footer>.m-bussiness>li,
 footer>.m-help>li,
@@ -245,7 +252,7 @@ padding: 5px 0;
     padding-bottom: 40px;
 }
 
-.u-houzz {
+.u-HZ {
     font-size: 40px;
     font-weight: bolder;
     letter-spacing: 2px;
