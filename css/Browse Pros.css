@@ -69,7 +69,7 @@ header > .m-header > li {
 
 header > .m-header > img {
     width: 100%;
-    height: 300px;
+    height: 450px;
 }
 
 header > .m-header > li:nth-child(2) {
@@ -91,6 +91,79 @@ header > .m-header > li > span > .m-header-gt {
 }
 section {
     margin-top: 10px;
+}
+
+section > .m-block_1,
+section > .m-block_2,
+section > .m-block_3,
+section > .m-block_4,
+section > .m-block_5 {
+    margin: 20px 0;
+}
+
+section > .m-block_1 > .u-title,
+section > .m-block_2 > .u-title,
+section > .m-block_3 > .u-title,
+section > .m-block_4 > .u-title,
+section > .m-block_5 > .u-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 75px;
+    padding-bottom: 15px;
+}
+
+section > .m-block_1 > .u-sort1,
+section > .m-block_2 > .u-sort1,
+section > .m-block_3 > .u-sort1,
+section > .m-block_4 > .u-sort1,
+section > .m-block_5 > .u-sort1 {
+    display: flex;
+    flex-direction: column;
+}
+
+section > .m-block_1 > .u-sort1 > ul,
+section > .m-block_2 > .u-sort1 > ul,
+section > .m-block_3 > .u-sort1 > ul,
+section > .m-block_4 > .u-sort1 > ul,
+section > .m-block_5 > .u-sort1 > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section > .m-block_1 > .u-sort1 > ul > li,
+section > .m-block_2 > .u-sort1 > ul > li,
+section > .m-block_3 > .u-sort1 > ul > li,
+section > .m-block_4 > .u-sort1 > ul > li,
+section > .m-block_5 > .u-sort1 > ul > li {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: -2px 20px 0 -2px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 2px 2px  2px 2px #ccc;
+    align-items: center;
+}
+
+section > .m-block_1 > .u-sort1 > ul > li > img,
+section > .m-block_2 > .u-sort1 > ul > li > img,
+section > .m-block_3 > .u-sort1 > ul > li > img,
+section > .m-block_4 > .u-sort1 > ul > li > img,
+section > .m-block_5 > .u-sort1 > ul > li > img {
+    border-bottom: 1px solid #eee;
+}
+
+section > .m-block_1 > .u-sort1 > ul > li > span,
+section > .m-block_2 > .u-sort1 > ul > li > span,
+section > .m-block_3 > .u-sort1 > ul > li > span,
+section > .m-block_4 > .u-sort1 > ul > li > span,
+section > .m-block_5 > .u-sort1 > ul > li > span {
+    margin: 8px 0 4px 0;
+}
+
+section>.m-BrowseAllPros{
+    padding-top: 40px;
+    padding-bottom: 10px;
 }
 section>.m-BrowseAllPros >.m-Popular-title >label ,
 section>.m-BrowseAllPros >.m-Renvoation-title >label ,
@@ -128,6 +201,10 @@ section>.m-BrowseAllPros > .m-CleaningServices-column >ul
     display: flex;
     flex-direction: column;
     margin-left: 40px;
+}
+
+section>.m-HomeImprovementPros {
+    padding-top: 40px;
 }
 
 section>.m-HomeImprovementPros>label {
@@ -181,19 +258,19 @@ footer > .m-houzz {
     margin-left: 30px;
 }
 
-footer > .m-houzz,
-footer > .m-company,
-footer > .m-bussiness,
-footer > .m-help,
-footer > .m-connect {
+footer>.m-houzz,
+footer>.m-company,
+footer>.m-bussiness,
+footer>.m-help,
+footer>.m-connect {
     margin: 0 20px;
 }
 
-footer > .m-houzz > li,
-footer > .m-company > li,
-footer > .m-bussiness > li,
-footer > .m-help > li,
-footer > .m-connect > li {
+footer>.m-houzz>li,
+footer>.m-company>li,
+footer>.m-bussiness>li,
+footer>.m-help>li,
+footer>.m-connect>li {
     font-weight: lighter;
     padding: 5px 0;
 }
@@ -211,7 +288,13 @@ footer > .m-connect > li {
 }
 
 .u-logo {
-    padding: 6px 5px;
-    border-radius: 20px;
     background-color: #aaa;
+    padding: 3px 5px;
+    border-radius: 20px;
 }
+
+
+
+
+
+

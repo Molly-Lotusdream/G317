@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
 body {
-	font-family: cursive;
+	font-family:initial;
 	width: 100%;
 	justify-content: center;
 	align-content: center;
@@ -66,11 +66,12 @@ input {
 
 nav > .m-event,
 .m-ideas,
-.m-sort {
-	font-family: cursive;
-	font-size: 20px;
-	font-weight: bold;
-	margin: 5px 4px 0 60px;
+.m-sort,
+.m-sign {
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 4px 0 60px;
 }
 
 header {
@@ -224,49 +225,45 @@ section > .m-RecommendedProducts > div > ul > span > label {
 }
 
 footer {
-	display: flex;
-	padding: 50px 0;
-	text-align: left;
-	border-top: 1px solid #ccc;
-	background: #f0f0f0;
+    display: flex;
+    padding: 50px 0;
+    text-align: left;
+    border-top: 1px solid #ccc;
+    background: #f0f0f0;
 }
 
-footer > .m-houzz {
-	width: 20%;
-	margin-left: 30px;
+footer > .m-HZ {
+    width: 20%;
+    margin-left: 30px;
 }
-
-footer > .m-houzz,
-footer > .m-company,
-footer > .m-bussiness,
-footer > .m-help,
-footer > .m-connect {
-	margin: 0 20px;
+footer>.m-HZ,
+footer>.m-company,
+footer>.m-bussiness,
+footer>.m-help,
+footer>.m-connect {
+margin: 0 20px ;
 }
-
-footer > .m-houzz > li,
-footer > .m-company > li,
-footer > .m-bussiness > li,
-footer > .m-help > li,
-footer > .m-connect > li {
-	font-weight: lighter;
-	padding: 5px 0;
+footer>.m-HZ>li,
+footer>.m-company>li,
+footer>.m-bussiness>li,
+footer>.m-help>li,
+footer>.m-connect>li {
+ font-weight: lighter;
+padding: 5px 0;
 }
-
 .u-title {
-	font-size: 20px;
-	font-weight: bold;
-	padding-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 40px;
 }
 
-.u-houzz {
-	font-size: 40px;
-	font-weight: bolder;
-	letter-spacing: 2px;
+.u-HZ {
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 2px;
 }
-
-.u-logo {
-	padding: 6px 5px;
-	border-radius: 20px;
-	background-color: #aaa;
+.u-logo  {
+    background-color: #aaa;
+    padding: 6px 5px;
+    border-radius: 20px;
 }
